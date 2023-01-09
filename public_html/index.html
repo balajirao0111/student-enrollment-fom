@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> First Form in HTML </title>
+
+        <style>
+
+            textarea
+            {
+                vertical-align : middle;
+            }
+
+
+            label
+            {
+                text-align : right;
+            }
+
+        </style>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+
+
+    </head>
+
+
+    <body>
+        <div class ='container'> 
+            
+          <div class ="page-header text-center">
+           <center> <h2> STUDENT ENROLLMENT Form in HTML </h2> </center>
+          </div>
+            
+            <form id = "studentform" method = "get">
+               
+             <div class ="form-group">
+                <center>    <label for = "rollno"> Roll Number : <input type = "text" id = "rollno"  onchange = "getStud()"/>  </label>  </center>
+
+               
+             </div> 
+
+              <div class ="form-group">
+                <center>  <label for = "fullname"> Student Full Name : <input type = "text" id = "fullname"/> </label> </center>
+
+
+                
+              </div>
+                
+               <div class ="form-group">
+
+                <center>  <label for = "classin"> Class : <input type = "text" id = "classin"/> </label> </center>
+
+
+               
+               </div>
+                
+               <div class ="form-group">
+                <center>  <label for = "address" > Address : <textarea name = "Address" rows = "6" cols = "17"  id = "address" > </textarea> </label> </center>
+
+                
+               </div>
+                
+               <div class ="form-group">
+
+                <center> <label for = "dob"> Date of Birth : <input type = "date" id = "dob"  />              </label> </center>
+
+
+                
+               </div>
+                
+               <div class ="form-group">
+
+                <center> <label for = "enrolldate"> Date of Enrollment : <input type = "date" id = "enrolldate"  /> </label> </center>
+
+
+                
+                
+               </div>
+                
+               <div class ="form-group text-center">
+
+                <center>  
+                    <button type = "button" class = "btn btn-lg btn-primary" id = "save" onclick = "saveData()" >  Save </button>  
+                    <button type = "button"  class = "btn btn-lg btn-primary" id = "update" onclick = "updateData()" >  Update </button> 
+                    <button type = "button" class = "btn btn-lg btn-primary" id = "reset" onclick = "resetData()" >  Reset </button>
+                </center>
+               </div>
+            </form>
+
+
+
+
+
+        </div>
+
+        <script src="http://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script>
+        
+        <script src="js/newjavascript.js" ></script>
+    </body>
+</html>
